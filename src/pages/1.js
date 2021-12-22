@@ -60,11 +60,11 @@ const Page1 = () => {
       <p>
         First approach was to use a nest loop to check each element in the list. This does work but once the list size gets too big you end up getting a Time Limit Exceeded(TLE).
       </p>
-      <Code myCode={code1}/>
+      <Code myCode={code1}></Code>
       <p>Second approach used a set which doesn't allow any duplicates. This is probably the most ideal way to solve this problem since you don't have to loop at all(linear time). You simply just copy the list into a set and check if the lengths match. If lengths match then there is no duplicates(return False). If lengths are different return True(match found)</p>
-      <Code myCode={code2}/>
+      <Code myCode={code2}></Code>
       <p>Although this solution does work for the given problem if the problem was changed to output the matching element instead of True/False. A good approach would be to use a for loop to add each element to a new set and new list 1 by 1. You could then compare length of set and list to return element instead of True/False </p>
-      <Code myCode={code3}/>
+      <Code myCode={code3}></Code>
     </ArticleLayout>
    </div>
     
