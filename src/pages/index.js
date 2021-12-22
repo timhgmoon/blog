@@ -19,7 +19,8 @@ const IndexPage = () => {
   
   const lastArticle = currentArticle * articlesPerPage
   const firstArticle = lastArticle - articlesPerPage
-  const currentArticles = articles.slice(firstArticle, lastArticle)
+  let currentArticles = []
+  currentArticles = articles.slice(firstArticle, lastArticle)
 
   const pag = (pageNum) => {
     setCurrentArticle(pageNum)
