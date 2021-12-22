@@ -1,11 +1,11 @@
 import * as React from "react";
 import Pagination from 'react-bootstrap/Pagination'
 
-const Paginate = ({articlesPerPage, total}) => {
+const Paginate = ({articlesPerPage, total, pag}) => {
   let items = [];
   for (let number = 1; number <= Math.ceil(total / articlesPerPage); number++) {
     items.push(
-      <Pagination.Item key={number}>
+      <Pagination.Item key={number} onClick={() => pag(number)}>
         {number}
       </Pagination.Item>,
     );

@@ -9,7 +9,7 @@ import Pagination from 'react-bootstrap/Pagination'
 const Blogs = ({articles}) => {
   
   const populateArticles = articles.map((article) => {
-    return <Article key={article.page} page={'/' + article.page} title={article.title} content={article.content}></Article>
+    return <Article key={article.page} page={'/' + article.page} title={article.title} content={article.content.slice(0, 300) + ' ...'}></Article>
   })
 
   return (
