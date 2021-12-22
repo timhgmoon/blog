@@ -1,5 +1,5 @@
 import * as React from "react";
-import Code from '../components/Code';
+import Code from '../components/code';
 import ArticleLayout from '../components/LCLayout';
 
 
