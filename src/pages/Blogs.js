@@ -6,10 +6,7 @@ import Pagination from 'react-bootstrap/Pagination'
 
 
 
-const Blogs = ({articles, loading}) => {
-  if(loading) {
-    return <h2>Currently Still Loading..</h2>
-  }
+const Blogs = ({articles}) => {
   
   const populateArticles = articles.map((article) => {
     return <Article key={article.page} page={'/' + article.page} title={article.title} content={article.content.slice(0, 300) + ' ...'}></Article>
