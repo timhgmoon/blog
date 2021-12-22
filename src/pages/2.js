@@ -1,5 +1,4 @@
-import * as React from "react"
-import Code from '../components/Code'
+import * as React from "react";
 
 
 const Page2 = () => {

@@ -30,7 +30,7 @@ const IndexPage = () => {
         Tim's Blog
       </title>
       <MyNav></MyNav>
-      <h1>Articles</h1>
+      <h1>Blog Posts</h1>
       <Blogs articles= {currentArticles}></Blogs>
 
       <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>

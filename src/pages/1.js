@@ -1,6 +1,6 @@
-import * as React from "react"
-import Code from '../components/Code'
-import ArticleLayout from '../components/LCLayout'
+import * as React from "react";
+import Code from '../components/Code';
+import ArticleLayout from '../components/LCLayout';
 
 
 const Page1 = () => {
@@ -20,7 +20,7 @@ const Page1 = () => {
         j += 1
     return False
   `.trim()
-  
+
   const code2 = `
     def containsDuplicate(nums):
       nums_set = set(nums)
