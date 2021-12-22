@@ -11,10 +11,13 @@ import Contact from '../components/Contact';
 const IndexPage = () => {
   const [articles, setArticles] = useState([])
   const [currentArticle, setCurrentArticle] = useState(1)
+  const [loading, setLoading] = useState(false)
   const articlesPerPage = 3
 
   useEffect (() => {
+    setLoading(true)
     setArticles(articlesData);
+    setLoading(false)
   },[]);
   
   const lastArticle = currentArticle * articlesPerPage
@@ -31,7 +34,7 @@ const IndexPage = () => {
       </title>
       <MyNav></MyNav>
       <h1>Articles</h1>
-      <Blogs articles= {currentArticles}></Blogs>
+      <Blogs articles= {currentArticles} loading={loading}></Blogs>
 
       <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>
       <Contact></Contact>
