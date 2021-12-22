@@ -1,5 +1,4 @@
 import * as React from "react";
-import Article from '../components/ArticleHeader';
 import MyNav from '../components/MyNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'

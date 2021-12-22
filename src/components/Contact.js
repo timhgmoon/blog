@@ -1,11 +1,10 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import './Contact.css';
-
+import { container } from './contact.module.css';
 const Contact = () => {
   return (
-    <div className="form-container">
+    <div className={container}>
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>

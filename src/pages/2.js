@@ -1,5 +1,5 @@
 import * as React from "react"
-import Code from '../components/code'
+import Code from '../components/Code'
 
 
 const Page2 = () => {

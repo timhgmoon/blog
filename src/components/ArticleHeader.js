@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 
 
-const IndexPage = ({page, title, content} ) => {
+const ArticleHeader = ({page, title, content} ) => {
   return (
    <article className="article-page">
      <Link to={page}>
@@ -15,4 +15,4 @@ const IndexPage = ({page, title, content} ) => {
   )
 }
 
-export default IndexPage
+export default ArticleHeader
