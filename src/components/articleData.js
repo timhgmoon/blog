@@ -1,8 +1,8 @@
 export default [
   {
     page: 1,
-    title: "First Post",
-    content: "Bacon ipsum dolor amet jerky chuck venison tenderloin. Capicola porchetta boudin, flank biltong rump turducken pancetta swine doner hamburger fatback short loin bacon leberkas. Ball tip leberkas meatloaf kielbasa, bresaola pancetta frankfurter ground round spare ribs filet mignon capicola turkey swine. Ground round short ribs spare ribs meatloaf tri-tip cow salami porchetta pastrami andouille bresaola chislic pork chop tongue capicola."
+    title: "Finding Duplicates (LC#287)",
+    content: "First approach was to use a nest loop to check each element in the list. This does work but once the list size gets too big you end up getting a Time Limit Exceeded(TLE)."
   },
   {
     page: 2,
