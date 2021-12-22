@@ -1,25 +1,8 @@
-import React from 'react';
+import * as React from "react";
 import styled from 'styled-components';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
 
-// const myCode = `
-// def maxProfit(prices):
-//   difference = 0
-//   first = prices[0]
-
-//   for i in range(1, len(prices)):
-//     if((prices[i] - first) > difference):
-//       difference = prices[i] - first
-//     else:
-//       if(prices[i] < first):
-//         first = prices[i]
-  
-//   return difference
-  
-// print(maxProfit([7,1,5,3,6,4]))
-// print(maxProfit([1,2]))`
-// .trim();
 
 const Pre = styled.pre`
   text-align: left;
