@@ -10,7 +10,7 @@ import Contact from '../components/Contact';
 const IndexPage = () => {
   const [articles, setArticles] = useState([])
   const [currentArticle, setCurrentArticle] = useState(1)
-  const articlesPerPage = 3
+  const articlesPerPage = 4
 
   useEffect (() => {
     setArticles(articlesData);
@@ -18,8 +18,7 @@ const IndexPage = () => {
   
   const lastArticle = currentArticle * articlesPerPage
   const firstArticle = lastArticle - articlesPerPage
-  let currentArticles = []
-  currentArticles = articles.slice(firstArticle, lastArticle)
+  const currentArticles = articles.slice(firstArticle, lastArticle)
 
   const pag = (pageNum) => {
     setCurrentArticle(pageNum)
@@ -31,9 +30,13 @@ const IndexPage = () => {
       </title>
       <MyNav></MyNav>
       <h1>Blog Posts</h1>
+      {/* Gets List of Blogs posts */}
       <Blogs articles= {currentArticles}></Blogs>
 
+      {/* Add pagination instead of listing all the blogs all at once */}
       <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>
+
+      {/* Add contact information */}
       <Contact></Contact>
    </main>
   

@@ -11,8 +11,8 @@ const MyNav = () => {
       <Navbar.Brand href="/">tmoon</Navbar.Brand>
       <Nav className="me-right">
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/">About</Nav.Link>
-        <Nav.Link href="/">Contact</Nav.Link>
+        <Nav.Link href="/About">About</Nav.Link>
+        <Nav.Link href="/Contact">Contact</Nav.Link>
       </Nav>
     </Container>
   </Navbar>
