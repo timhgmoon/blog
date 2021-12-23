@@ -1,16 +1,18 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Nav from './MyNav';
-import { Title } from './lcLayout.module.css';
+import ContactForm from '../components/ContactForm'
+import { Right, Title, LcLink } from './lcLayout.module.css';
 const LCLayout = ({title, link, linkText, children}) => {
   return (
     <div>
       <title>{title}</title>
-      <Nav></Nav>
       <main>
         <h1 className={Title}>{title}</h1>
-        <h2 className="lc-link"><a href={link}>{linkText}</a></h2>
+        <p className={Right}><a className={LcLink} href={link}>{linkText}</a></p>
         {children}
+        <p>Thank you for reading!</p>
+        <ContactForm></ContactForm>
         <Link to="/">Back to Home</Link>
       </main>
     </div>

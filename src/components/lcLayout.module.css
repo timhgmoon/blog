@@ -1,3 +1,18 @@
 .Title {
   text-align: center;
 }
+.Right {
+  text-align: right;
+}
+.LcLink {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #7b3d29;
+  border-bottom-style: solid;
+  border-bottom-color: #7b3d29;
+  border-bottom-width: 1px;
+}
+.LcLink:hover {
+  color: #7b3d29;
+  border-bottom-style: none;
+}
