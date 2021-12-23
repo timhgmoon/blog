@@ -1,5 +1,5 @@
 import * as React from "react";
-import LcLayout from '../components/lcLayout';
+import ArticleLayout from '../components/ArticleLayout';
 import Code from '../components/code';
 import Nav from '../components/MyNav';
 import { Container, Red } from '../components/blogPost.module.css';
@@ -50,7 +50,7 @@ const Page1 = () => {
   <>
     <Nav></Nav>
    <div className={Container}>
-    <LcLayout 
+    <ArticleLayout 
       title="Finding Duplicates (LC#287)"
       link="https://leetcode.com/problems/find-the-duplicate-number/"
       linkText="Link to finding duplicates on leetcode">
@@ -69,7 +69,7 @@ const Page1 = () => {
       <p>Although this solution does work for the given problem, if the problem was  changed to output the matching element instead of True/False. A good approach would be to use a for loop to add each element to a new set and new list 1 by 1. You could then compare length of set & list to return matching element.</p>
       <Code myCode={code3}></Code>
       
-    </LcLayout>
+    </ArticleLayout>
    </div>
   </>
   )
