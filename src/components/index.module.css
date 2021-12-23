@@ -10,3 +10,16 @@ main {
   text-align: center;
   padding: 2rem 0;
 }
+
+.discord {
+  text-decoration: none;
+  color: #7b3d29;
+  border-bottom-style: solid;
+  border-bottom-color: #7b3d29;
+  border-bottom-width: 2px;
+}
+
+.discord:hover {
+  color: black;
+  border-bottom-style: none;
+}

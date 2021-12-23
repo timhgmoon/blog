@@ -19,7 +19,7 @@ const LCLayout = ({title, link, linkText, children}) => {
       <title>{title}</title>
       <main>
         <h1 className={Title}>{title}</h1>
-        <p className={Right}><a className={LcLink} href={link}>{linkText}</a></p>
+        <p className={Right}><a className={LcLink} href={link} target="_blank">{linkText}</a></p>
         {children}
         <p>Thank you for reading!</p>
         <ContactForm></ContactForm>

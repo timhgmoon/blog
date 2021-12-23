@@ -14,7 +14,9 @@ const MyNav = () => {
       <Nav className="me-right">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/About">About</Nav.Link>
+        <Nav.Link href="https://discord.gg/AFkUgVbN">Discord</Nav.Link>
         <Nav.Link href="/Contact">Contact</Nav.Link>
+        
       </Nav>
     </Container>
   </Navbar>
