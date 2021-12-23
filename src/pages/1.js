@@ -1,7 +1,7 @@
 import * as React from "react";
+import LcLayout from '../components/lcLayout';
 import Code from '../components/code';
 import Nav from '../components/MyNav';
-import LcLayout from '../components/lcLayout';
 import { Container, Red } from '../components/blogPost.module.css';
 
 
