@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Nav from './MyNav';
-import ContactForm from '../components/ContactForm'
+import ContactForm from './ContactForm'
 import { Right, Title, LcLink } from './lcLayout.module.css';
 const LCLayout = ({title, link, linkText, children}) => {
   return (
