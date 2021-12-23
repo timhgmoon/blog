@@ -5,7 +5,9 @@ import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';
 import Paginate from '../components/Paginate.js'
 import Blogs from './Blogs';
-import Contact from '../components/Contact';
+import Contact from '../components/ContactForm';
+import { container, title } from '../components/index.module.css';
+
 
 const IndexPage = () => {
   const [articles, setArticles] = useState([])
@@ -29,15 +31,18 @@ const IndexPage = () => {
         Tim's Blog
       </title>
       <MyNav></MyNav>
-      <h1>Blog Posts</h1>
-      {/* Gets List of Blogs posts */}
-      <Blogs articles= {currentArticles}></Blogs>
+      <div className= {container}>
+        <h1 className={title}>Blog Posts</h1>
+        {/* Gets List of Blogs posts */}
+        <Blogs articles= {currentArticles}></Blogs>
 
-      {/* Add pagination instead of listing all the blogs all at once */}
-      <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>
+        {/* Add pagination instead of listing all the blogs all at once */}
+        <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>
 
-      {/* Add contact information */}
-      <Contact></Contact>
+        {/* Add contact information */}
+        {/* <Contact></Contact> */}
+      </div>
+  
    </main>
   
   )

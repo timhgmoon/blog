@@ -2,21 +2,21 @@ export default [
   {
     page: 1,
     title: "Finding Duplicates (LC#287)",
-    content: "First approach was to use a nest loop to check each element in the list. This does work but once the list size gets too big you end up getting a Time Limit Exceeded(TLE)."
+    content: "First approach was to use a nest loop to check each element in the list. This does work but once the list size gets too big you end up getting a Time Limit Exceeded(TLE)"
   },
   {
     page: 2,
-    title: "Second Post",
+    title: "Best to Buy Stock",
     content: "Jerky pig tongue shoulder ribeye tenderloin turkey, tri-tip porchetta bresaola brisket chicken alcatra cupim. Doner short loin burgdoggen, flank pork loin leberkas shank pork belly. Bresaola shank meatball chislic ribeye beef beef ribs andouille hamburger pork ball tip alcatra turkey doner brisket. Meatloaf sausage burgdoggen bresaola boudin. Fatback ham hock pig, turkey biltong corned beef chicken burgdoggen swine buffalo pastrami."
   },
   {
     page: 3,
-    title: "Third Post",
+    title: "Parenthesis",
     content: "Bacon ipsum dolor amet jerky chuck venison tenderloin. Capicola porchetta boudin, flank biltong rump turducken pancetta swine doner hamburger fatback short loin bacon leberkas. Ball tip leberkas meatloaf kielbasa, bresaola pancetta frankfurter ground round spare ribs filet mignon capicola turkey swine. Ground round short ribs spare ribs meatloaf tri-tip cow salami porchetta pastrami andouille bresaola chislic pork chop tongue capicola."
   },
   {
     page: 4,
-    title: "Fourth Post",
+    title: "Product of Array",
     content: "Jerky pig tongue shoulder ribeye tenderloin turkey, tri-tip porchetta bresaola brisket chicken alcatra cupim. Doner short loin burgdoggen, flank pork loin leberkas shank pork belly. Bresaola shank meatball chislic ribeye beef beef ribs andouille hamburger pork ball tip alcatra turkey doner brisket. Meatloaf sausage burgdoggen bresaola boudin. Fatback ham hock pig, turkey biltong corned beef chicken burgdoggen swine buffalo pastrami."
   },
   {

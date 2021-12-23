@@ -1,0 +1,11 @@
+.TextContent {
+  /* color :#9c6436; */
+}
+
+.Title {
+  width: 50%;
+  border-bottom-style: solid;
+  border-bottom-color: #7b3d29;
+  border-bottom-width: 2px;
+  padding-bottom: 10px;
+}

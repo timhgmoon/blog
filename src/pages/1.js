@@ -1,6 +1,7 @@
 import * as React from "react";
 import Code from '../components/code';
 import ArticleLayout from '../components/LCLayout';
+import Contact from '../components/ContactForm';
 
 
 const Page1 = () => {
@@ -19,7 +20,7 @@ const Page1 = () => {
           return True
         j += 1
     return False
-  `.trim()
+  `
 
   const code2 = `
     def containsDuplicate(nums):
@@ -27,18 +28,18 @@ const Page1 = () => {
       if(len(nums) == len(nums_set)):
         return False
       return True
-  `.trim()
+  `
 
   const code3= `
     def containsDuplicate(nums):
-    nums_set = set()
-    nums_list = []
-    for i in range(len(nums)):
-      nums_set.add(nums[i])
-      nums_list.append(nums[i])
-      if(len(nums_set) != len(nums_list)):
-        return nums[i]
-    return 
+      nums_set = set()
+      nums_list = []
+      for i in range(len(nums)):
+        nums_set.add(nums[i])
+        nums_list.append(nums[i])
+        if(len(nums_set) != len(nums_list)):
+          return nums[i]
+      return 
   `
 
   const displayConstraints = constraints && constraints.map((item) => {
@@ -65,6 +66,8 @@ const Page1 = () => {
       <Code myCode={code2}></Code>
       <p>Although this solution does work for the given problem if the problem was changed to output the matching element instead of True/False. A good approach would be to use a for loop to add each element to a new set and new list 1 by 1. You could then compare length of set and list to return element instead of True/False </p>
       <Code myCode={code3}></Code>
+
+      <Contact></Contact>
     </ArticleLayout>
    </div>
     
