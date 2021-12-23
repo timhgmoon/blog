@@ -5,7 +5,7 @@ import { container, contact } from './contact.module.css';
 const Contact = () => {
   return (
     <div className={container}>
-      <h3 className={contact}>Contact Me!</h3>
+      <h3 className={contact}>Contact Me</h3>
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>

@@ -1,12 +1,12 @@
 import * as React from "react";
+import logo from "../images/icon.png"
 import MyNav from '../components/MyNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';
 import Paginate from '../components/Paginate.js'
 import Blogs from './Blogs';
-import Contact from '../components/ContactForm';
-import { container, title } from '../components/index.module.css';
+import { container, title} from '../components/index.module.css';
 
 
 const IndexPage = () => {
@@ -27,9 +27,11 @@ const IndexPage = () => {
   }
   return (
    <main>
+     <link rel="icon" href={logo} type="image/x-icon"/>
       <title>
         Tim's Blog
       </title>
+      
       <MyNav></MyNav>
       <div className= {container}>
         <h1 className={title}>Blog Posts</h1>
