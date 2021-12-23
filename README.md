@@ -1,54 +1,81 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+**LC-Bot**
+Tim
+December, 2021
+General Assembly
 
-## 🚀 Quick start
+---
 
-1.  **Create a Gatsby site.**
+***Project Description***
+- ✨ This app will be a blog post of coding questions/process of getting a job after general assembly.  Main focus of the app will be using a discord bot to send daily leetcode questions and being able to search questions/answers through discord using commands.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+***Pages***
+- *Landing Page*: List of blogs and short description under them. 
+- *Add post*: Will make a new blog. 
+- *About*: Short description of discord functions w/ commands and a description of current blog
+- *Blog*: Will include blog post w/ ability to allow other users to add comments.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+***User Stories***
+- 🤔 Who are our users, what do they want, and why?
+- Users are anybody that wants to join my journey looking for a job. Can also join discord to get daily(randomized) coding problems.
 
-2.  **Start developing.**
+***Wire Frames***
+- 📝 Sketches of views and interfaces in the application.
+- Link to [initial idea, wireframes, and react architecture](https://imgur.com/a/BhcJbqE)
+- Link to [snippet of discord bot-basic](https://imgur.com/rDvR1tX)
 
-    Navigate into your new site’s directory and start it up.
+***Time/Priority Matrix***
+📊 Table including functionality and estimated vs. actual time for completion. 
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: | :---: | :---: |
+| model schemas / CRUD| H |4hrs | 1hr |
+| setting up gatsby/documentation| H | 1hr | 5hr |
+| discord bot| H | 10hrs | 10hr |
+| creating components(nav)| H | 1hrs | 1hrs |
+| creating components(landing page)| H | 4hrs | 2hr |
+| creating components(blog post page)| H | 2hrs | 6hr|
+| creating components(about)| M | 3hrs | 1hr |
+| connecting frontend w/ backend| H | 3hrs | 2hr(not finished) | 
+| styling pages(mobile)| H| 5hrs | 1hr |
+| styling pages(desktop)| H| 3hrs  | 4hr |
+| animation | L | 2hrs | 0hrs |
+| Total | x | 38hrs | 33hrs |
 
-3.  **Open the code and start customizing!**
+***MVP***
+- Layout and Structure
+- Models/database
+- discord bot send coding question daily
+- adding post for blog
+- css(landing page, about, blog post, add blog)
+- heroku upload
 
-    Your site is now running at http://localhost:8000!
+***POST-MVP***
+- add timer to solve coding question
+- add stackover flow api for easy access through discord
+- read wagtail CMS documentation for django 
+- search stackoverflow through my webpage?
+- 
+***Challenges*** 
+-Discord interval function
+- First tried to use a while loop that used a time.sleep() method but the other commands weren't working, reading through the documentation I found a built in method using @task.loop().
+```
+@tasks.loop(hours=12)
+async def send_message():
+    channel = client.get_channel(<enter channel id here>)
+    new_url = GrabUrl.getUrl()
+    await channel.send(new_url)
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+-Pagination
+-Decided to use the built in bootstrap pagination but had to add a little bit of functionality to get it to work.
+-Used this package documentation as a reference on how to build the structure(didn't use package)
+[link](https://www.npmjs.com/package/react-paginate)
+```
+  const lastArticle = currentArticle * articlesPerPage
+  const firstArticle = lastArticle - articlesPerPage
+  const currentArticles = articles.slice(firstArticle, lastArticle)
+  const pag = (pageNum) => {
+    setCurrentArticle(pageNum)
+  }
+ ```
+---
