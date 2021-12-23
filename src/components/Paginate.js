@@ -1,5 +1,7 @@
 import * as React from "react";
-import Pagination from 'react-bootstrap/Pagination'
+import Pagination from 'react-bootstrap/Pagination';
+import './paginate.css';
+import { paginateContainer } from './paginate.module.css';
 
 const Paginate = ({articlesPerPage, total, pag}) => {
   let items = [];
@@ -17,7 +19,7 @@ const Paginate = ({articlesPerPage, total, pag}) => {
     </div>
   );
 return(
-  <div>
+  <div className={paginateContainer}>
     {paginationBasic}
   </div>
 )

@@ -9,3 +9,7 @@
   border-bottom-width: 2px;
   padding-bottom: 10px;
 }
+
+.Title:hover {
+  border-bottom-color: black;
+}
