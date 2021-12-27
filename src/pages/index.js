@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';
 import Paginate from '../components/Paginate.js'
-import Blogs from './Blogs';
+import Blogs from './blogs';
 import { container, title} from '../components/index.module.css';
 
 
