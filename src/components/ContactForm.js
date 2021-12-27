@@ -1,6 +1,6 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form';
+import * as React from "react";
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import { container, contact } from './contact.module.css';
 // import { graphql, useStaticQuery } from 'gatsby';
 // import axios from 'axios';
