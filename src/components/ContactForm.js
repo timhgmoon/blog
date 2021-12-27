@@ -2,7 +2,19 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { container, contact } from './contact.module.css';
+// import { graphql, useStaticQuery } from 'gatsby';
+// import axios from 'axios';
 const Contact = () => {
+
+  // const gatsbyData = useStaticQuery(graphql`
+  // query{
+  //   email {
+  //     email: "Tim@gmail.com",
+  //     content: "asdfsfa"
+  //   }
+  // }
+  // `
+  // )
   return (
     <div className={container}>
       <h3 className={contact}>Contact Me</h3>

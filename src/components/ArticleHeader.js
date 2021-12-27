@@ -4,7 +4,7 @@ import { ArticlePage, TextContent, Title } from './articleHeader.module.css'
 import styled from 'styled-components'
 
 
-const ArticleHeader = ({page, title, content} ) => {
+const ArticleHeader = ({ page, title, content }) => {
   const StyledLink = styled(Link)`
     text-decoration: none;
     color: black;

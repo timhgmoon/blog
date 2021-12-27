@@ -6,8 +6,8 @@ export default [
   },
   {
     page: 2,
-    title: "Best to Buy Stock",
-    content: "Jerky pig tongue shoulder ribeye tenderloin turkey, tri-tip porchetta bresaola brisket chicken alcatra cupim. Doner short loin burgdoggen, flank pork loin leberkas shank pork belly. Bresaola shank meatball chislic ribeye beef beef ribs andouille hamburger pork ball tip alcatra turkey doner brisket. Meatloaf sausage burgdoggen bresaola boudin. Fatback ham hock pig, turkey biltong corned beef chicken burgdoggen swine buffalo pastrami."
+    title: "Maximum Subarray",
+    content: "First approach was to brute force which will take about O(n^2).  First thing you have to do is set a max variable to the lowest negative number because negatives are accepted as elements. In this case(python) <code>max=float('inf')</code>. Then you want to use a nested for loop which will go through each element and add it to a variable called sum.  Then you want to check if max is less than sum, if so you want to set max to the sum. This solution does solve the problem but you will eventually run into a TLE if the list size is too large."
   },
   {
     page: 3,

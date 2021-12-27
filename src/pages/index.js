@@ -1,5 +1,4 @@
 import * as React from "react";
-import logo from "../images/icon.png"
 import MyNav from '../components/MyNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
@@ -12,7 +11,7 @@ import { container, title} from '../components/index.module.css';
 const IndexPage = () => {
   const [articles, setArticles] = useState([])
   const [currentArticle, setCurrentArticle] = useState(1)
-  const articlesPerPage = 4
+  const articlesPerPage = 5
 
   useEffect (() => {
     setArticles(articlesData);
@@ -27,7 +26,6 @@ const IndexPage = () => {
   }
   return (
    <main>
-     <link rel="icon" href={logo} type="image/x-icon"/>
       <title>
         Tim's Blog
       </title>
@@ -40,9 +38,6 @@ const IndexPage = () => {
 
         {/* Add pagination instead of listing all the blogs all at once */}
         <Paginate articlesPerPage={articlesPerPage} total={articles.length} pag={pag}></Paginate>
-
-        {/* Add contact information */}
-        {/* <Contact></Contact> */}
       </div>
   
    </main>
