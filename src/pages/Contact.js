@@ -1,6 +1,6 @@
 import * as React from 'react'
 import ContactForm from '../components/ContactForm'
-import MyNav from './myNav'
+import MyNav from '../components/myNav'
 import { container } from '../components/index.module.css'
 const Contact = () => {
   return (

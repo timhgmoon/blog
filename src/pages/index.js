@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';
 import Blogs from './blogs';
-import MyNav from './myNav';
+import MyNav from '../components/myNav';
 import Paginate from '../components/Paginate.js'
 import { container, title} from '../components/index.module.css';
 

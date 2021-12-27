@@ -1,7 +1,7 @@
 import * as React from "react";
 import ArticleLayout from '../components/ArticleLayout';
 import Code from '../components/code';
-import Nav from './myNav';
+import Nav from '../components/myNav';
 import { Container, Red } from '../components/blogPost.module.css';
 
 
