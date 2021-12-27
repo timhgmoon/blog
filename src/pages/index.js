@@ -1,10 +1,10 @@
 import * as React from "react";
-import MyNav from './myNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';
-import Paginate from '../components/Paginate.js'
 import Blogs from './blogs';
+import MyNav from './myNav';
+import Paginate from '../components/Paginate.js'
 import { container, title} from '../components/index.module.css';
 
 

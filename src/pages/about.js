@@ -1,6 +1,6 @@
 import * as React from 'react'
-import MyNav from './myNav'
 import ContactForm from '../components/ContactForm'
+import MyNav from './myNav'
 import {container, discord, title} from '../components/index.module.css'
 const About = () => {
   return (
