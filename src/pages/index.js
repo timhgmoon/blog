@@ -1,5 +1,5 @@
 import * as React from "react";
-import MyNav from '../components/MyNav';
+import MyNav from './myNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect} from 'react'
 import articlesData from '../components/articleData';

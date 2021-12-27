@@ -1,5 +1,5 @@
 import * as React from 'react'
-import MyNav from '../components/MyNav'
+import MyNav from './myNav'
 import ContactForm from '../components/ContactForm'
 import { container } from '../components/index.module.css'
 const Contact = () => {
